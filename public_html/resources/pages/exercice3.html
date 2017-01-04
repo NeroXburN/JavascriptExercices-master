@@ -18,11 +18,24 @@
                 <li>Modifier la valeur de la variable dont la valeur par défaut est variable2</li>
                 <li>Créer un champ text dans lequel sont affichées les variables variableToDisplay et celle dont la valeur par défaut est variable2</li>
             </ul>
-        </div>   
+        </div>
+        <div><span id="variableToDisplay"></span> devient <span id="var2"></span><br/></div>   
         <script src="../js/classie.js"></script>
         <script src="../js/gnmenu.js"></script>
         <script>
             new gnMenu(document.getElementById('gn-menu'));
         </script>
+        <script>
+            "use strict";
+            	debugger;
+            var variableToDisplay = 25;
+            var var2 = "variable2";
+
+            var2 = "variableNew2";
+
+                document.getElementById("variableToDisplay").innerHTML =variableToDisplay;
+                document.getElementById("var2").innerHTML =var2;
+        </script>
+        
     </body>
 </html>
